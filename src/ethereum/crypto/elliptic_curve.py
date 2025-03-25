@@ -119,7 +119,7 @@ class EllipticCurve(Generic[F]):
         Add a point to itself.
         """
         x, y, F = self.x, self.y, self.FIELD
-        if x == 0 and y == 0:
+        if self == self.point_at_infinity():
             return self
         lam = (F.from_int(3) * x**2 + self.A) / (F.from_int(2) * y)
         new_x = lam**2 - x - x
