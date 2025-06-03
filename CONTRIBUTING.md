@@ -24,14 +24,14 @@ This specification aims to be:
 
 - Attempt to use descriptive English words (or _very common_ abbreviations) in documentation and identifiers.
 - Avoid using EIP numbers in identifiers.
-- If necessary, there is a custom dictionary `whitelist.txt`. 
+- If necessary, there is a custom dictionary `whitelist.txt`.
 
 
 ### Development
 
 Running the tests necessary to merge into the repository requires:
 
- * Python 3.11.x, and
+ * Python 3.10.x, and
  * [PyPy](https://www.pypy.org/) [7.3.19](https://downloads.python.org/pypy/) or later.
  * `geth` installed and present in `$PATH`
 
